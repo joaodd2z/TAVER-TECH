@@ -1,0 +1,14 @@
+{
+  "name": "taver-tech-electron",
+  "version": "0.1.0",
+  "main": "main.js",
+  "build": {
+    "appId": "com.tavertech.app",
+    "productName": "TAVER TECH",
+    "files": ["**/*"],
+    "mac": { "category": "public.app-category.productivity" },
+    "win": { "target": "nsis" },
+    "linux": { "target": ["AppImage", "deb"] },
+    "extraMetadata": {}
+  }
+}

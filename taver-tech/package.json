@@ -1,0 +1,49 @@
+{
+  "name": "taver-tech",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "build:web": "next build --turbopack",
+    "start": "next start",
+    "start:web": "next start",
+    "lint": "eslint",
+    "electron:dev": "cross-env ELECTRON_START_URL=http://localhost:3000 electron electron/main.js",
+    "build:electron": "electron-builder -mwl",
+    "seed": "node scripts/seed.cjs",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.58.0",
+    "axios": "^1.12.2",
+    "bcryptjs": "^3.0.2",
+    "framer-motion": "^12.23.22",
+    "jose": "^6.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.544.0",
+    "next": "15.5.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-tsparticles": "^2.12.2",
+    "swr": "^2.3.6",
+    "three": "^0.180.0",
+    "tsparticles": "^3.9.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "cross-env": "^10.1.0",
+    "electron": "^38.2.1",
+    "electron-builder": "^26.0.12",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
